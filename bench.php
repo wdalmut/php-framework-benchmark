@@ -35,6 +35,7 @@ $al = array(
     'phalcon' => 'Phalcon 0.4.4',
     'yaf' => 'Yaf 2.1.18',
     //'proem' => 'Proem 0.5.1',
+    'simple-mvc' => 'simple-mvc 0.0.13'
 );
 $a = array_keys($al);
 
