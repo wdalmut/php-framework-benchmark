@@ -1,4 +1,11 @@
 <?php
+if (isset($_GET['debug'])) {
+    xhprof_enable(XHPROF_FLAGS_CPU + XHPROF_FLAGS_MEMORY);
+
+    define('START_TIME', microtime(true));
+    define('START_MEMORY_USAGE', memory_get_usage());
+}
+
 require_once __DIR__ . '/../../vendor/autoload.php';
 
 $app = new Application();
@@ -32,7 +39,7 @@ echo "Page rendered in <b>"
 $f = get_included_files();
 echo ", include files: ".count($f);
 
-$XHPROF_ROOT = realpath(dirname(__FILE__) .'/../..');
+$XHPROF_ROOT = realpath(dirname(__FILE__) .'/../../..');
 include_once $XHPROF_ROOT . "/xhprof/xhprof_lib/utils/xhprof_lib.php";
 include_once $XHPROF_ROOT . "/xhprof/xhprof_lib/utils/xhprof_runs.php";
 
