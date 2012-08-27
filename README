@@ -42,6 +42,7 @@ How to run this benchmark
         http://slim.pfb.example.com/?debug=1
         http://colaphp.pfb.example.com/?debug=1
         http://fuelphp.pfb.example.com/?debug=1
+        http://simple-mvc.pfb.example.com/?debug=1
 
     Run the benchmark scripts
         php bench.php -c 100 -n 5000 (clients:100, numbers:5000)   
