@@ -1,5 +1,7 @@
 <?php
-require_once __DIR__ . '/../../vendor/autoload.php';
+require_once __DIR__ . '/../../library/Loader.php';
+
+Loader::classmap();
 
 $app = new Application();
 $app->setControllerPath(__DIR__ . '/../app/controllers');
