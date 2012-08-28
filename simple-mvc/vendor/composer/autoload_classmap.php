@@ -6,11 +6,11 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Route' => $baseDir . '/vendor/wdalmut/simple-mvc/src/Route.php',
-    'Controller' => $baseDir . '/vendor/wdalmut/simple-mvc/src/Controller.php',
-    'EventManager' => $baseDir . '/vendor/wdalmut/simple-mvc/src/EventManager.php',
     'View' => $baseDir . '/vendor/wdalmut/simple-mvc/src/View.php',
-    'Layout' => $baseDir . '/vendor/wdalmut/simple-mvc/src/Layout.php',
+    'Route' => $baseDir . '/vendor/wdalmut/simple-mvc/src/Route.php',
     'Loader' => $baseDir . '/vendor/wdalmut/simple-mvc/src/Loader.php',
+    'Layout' => $baseDir . '/vendor/wdalmut/simple-mvc/src/Layout.php',
+    'EventManager' => $baseDir . '/vendor/wdalmut/simple-mvc/src/EventManager.php',
+    'Controller' => $baseDir . '/vendor/wdalmut/simple-mvc/src/Controller.php',
     'Application' => $baseDir . '/vendor/wdalmut/simple-mvc/src/Application.php',
 );
